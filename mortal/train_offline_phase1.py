@@ -203,7 +203,8 @@ def train():
             num_workers = num_workers,
             pin_memory = True,
             worker_init_fn = worker_init_fn,
-            persistent_workers=True
+            persistent_workers=True,
+            in_order = False
         ))
 
         remaining_obs = []
